@@ -2,7 +2,7 @@
 <info>
 		<name>Pathfinder Kitsune</name>
 		<update version="0.0.1">
-			<file name="race-kitsune.xml" url="https://raw.githubusercontent.com/FreshRoyal/Pathfinder5Eelements/master/pathfinder-5e/race-kitsune.xml" />
+			<file name="race-kitsune.xml" url="https://raw.githubusercontent.com/FreshRoyal/pathfinder5e/master/pathfinder-5e/race-kitsune.xml" />
 		</update>
 	</info>
 <elements>
