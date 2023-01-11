@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="uft-8" ?>
+<elements>
+<info>
+		<name>Pathfinder Suli</name>
+		<update version="0.0.1">
+			<file name="race-suli.xml" url="https://raw.githubusercontent.com/FreshRoyal/Pathfinder5Eelements/master/pathfinder-5e/race-suli.xml" />
+		</update>
+	</info>
+    <element name="Suli" type="Race" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACE_SULI" >
+        <description>
+        <p>Sulis, or suli-jann, are the descendents of mortals and jann. They manifest their otherworldly heritage in adolescence, or when awakened by an encounter with a genie. Strong and attractive, these dynamic individuals can call forth elemental energies to augment their prowess in combat. Neither genie nor quite human, Sulis stand in two worlds and often feel as if they don’t belong to either. </p>
+        <h4>SULI TRAITS </h4>
+        <p>Your Suli character has the following traits. </p>
+        <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 2, and your Strength score increases by 1. </p>
+        <p class="indent"><strong><em>Size.</em></strong> Your size is Medium. </p>
+        <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet. </p>
+        <p class="indent"><strong><em>Negotiator.</em></strong> You are proficient in Persuasion and Insight. </p>
+        <p class="indent"><strong><em>Elemental Resistance.</em></strong> Choose one of the following types of damage; acid, cold, lightning, and fire. You are resistant to that type of damage. </p>
+        <p class="indent"><strong><em>Elemental Strike.</em></strong> As a bonus action, you can ignite your hands with elemental damage. For a minute, you gain an additional 1d6 damage, of the same type you are resistant to, to one melee attack, wielding a weapon or unarmed, per round. Once you use this feature, you can’t use it again until you finish a long rest. </p>
+        <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Primordial. </p>
+        </description>
+        <sheet display="false" />
+         <rules>
+            <stat name="charisma" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Suli)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Suli)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <grant type="Language" id="ID_LANGUAGE_PRIMORDIAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <grant type="Racial Trait" id="ID_UHH_PR5E_RACIAL_TRAIT_NEGOTIATOR" />
+            <grant type="Racial Trait" id="ID_UHH_PR5E_RACIAL_TRAIT_ELEMENTAL_RESISTANCE" />
+            <grant type="Racial Trait" id="ID_UHH_PR5E_RACIAL_TRAIT_ELEMENTAL_STRIKE" />
+        </rules>
+    </element>
+
+    <element name="Negotiator" type="Racial Trait" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACIAL_TRAIT_NEGOTIATOR">
+        <description>
+            <p>You are proficient in Persuasion and Insight. </p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency" supports="Skill" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+        </rules>
+    </element>
+    
+    <element name="Elemental Resistance" type="Racial Trait" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACIAL_TRAIT_ELEMENTAL_RESISTANCE">
+        <description>
+            <p> Choose one of the following types of damage; acid, cold, lightning, and fire. You are resistant to that type of damage. </p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Racial Trait" name="Elemental Resistance" supports="Suli Resistance" />
+        </rules>
+    </element>
+
+    <element name="Elemental Strike" type="Racial Trait" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACIAL_TRAIT_ELEMENTAL_STRIKE">
+		<description>
+			<p> As a bonus action, you can ignite your hands with elemental damage. For a minute, you gain an additional 1d6 damage, of the same type you are resistant to, to one melee attack, wielding a weapon or unarmed, per round. Once you use this feature, you can’t use it again until you finish a long rest. </p>
+		</description>
+		<sheet>
+			<description usage="1/Short Rest" action="Bonus Action">You can ignite your hands with elemental damage. For a minute, you gain an additional 1d6 damage, of the same type you are resistant to, to one melee attack, wielding a weapon or unarmed, per round. </description>
+		</sheet>
+	</element>
+
+	<element name="Acid" type="Racial Trait" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACIAL_TRAIT_ELEMENTAL_RESISTANCE_ACID">
+        <supports>Suli Resistance</supports>
+		<description>
+            <p> You are resistant to that acid damage. </p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+        </rules>
+    </element>
+
+	<element name="Cold" type="Racial Trait" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACIAL_TRAIT_ELEMENTAL_RESISTANCE_COLD">
+        <supports>Suli Resistance</supports>
+		<description>
+            <p> You are resistant to that cold damage. </p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+        </rules>
+    </element>
+
+	<element name="Lightning" type="Racial Trait" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACIAL_TRAIT_ELEMENTAL_RESISTANCE_LIGHTNING">
+        <supports>Suli Resistance</supports>
+		<description>
+            <p> You are resistant to that lightning damage. </p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+        </rules>
+    </element>
+
+	<element name="Fire" type="Racial Trait" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACIAL_TRAIT_ELEMENTAL_RESISTANCE_FIRE">
+        <supports>Suli Resistance</supports>
+		<description>
+            <p> You are resistant to that fire damage. </p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+        </rules>
+    </element>
+
+</elements>

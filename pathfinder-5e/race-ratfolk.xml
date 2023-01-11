@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="uft-8" ?>
+<elements>
+<info>
+		<name>Pathfinder Ratfolk</name>
+		<update version="0.0.1">
+			<file name="race-ratfolk.xml" url="https://raw.githubusercontent.com/FreshRoyal/Pathfinder5Eelements/master/pathfinder-5e/race-ratfolk.xml" />
+		</update>
+	</info>
+    <element name="Ratfolk" type="Race" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACE_RATFOLK" >
+        <description>
+        <p>Ratfolk are small, rodent-like humanoids, they are often found in nomadic trading caravans or crawling in city sewers. Much like the pack rats they resemble, ratfolk are tinkerers and hoarders by nature, and as a whole are masters of commerce, especially when it comes to acquiring and repairing mechanical devices or crafting alchemical substances. </p>
+        <h4>RATFOLK TRAITS</h4>
+        <p>Your Ratfolk character has the following traits.</p>
+        <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2, and your Intelligence score increases by 1. </p>
+        <p class="indent"><strong><em>Size.</em></strong> Your size is Small. </p>
+        <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet. </p>
+        <p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray. </p>
+        <p class="indent"><strong><em>Rodent Friendship.</em></strong> You have the ability to communicate with rodents. Your words are understood by rodents and you can understand basic feelings and ideas from them. You have advantage on all Charisma and Animal Handling checks you make to influence them. </p>
+        <p class="indent"><strong><em>Shrewd Crafter.</em></strong> You are proficient in Alchemist’s Supplies and Tinker’s Tools. </p>
+        <p class="indent"><strong><em>Sewer Dweller.</em></strong> You have advantage on saving throws against diseases and being poisoned. </p>
+        <p class="indent"><strong><em>Scurry.</em></strong> You can move through the space of any creature that is of a size larger than yours. </p>
+        <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Ratfolk. </p>
+        </description>
+        <sheet display="false" />
+
+        <rules>
+            <stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Ratfolk)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Ratfolk)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Size" id="ID_SIZE_SMALL" />
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <grant type="Language" id="ID_UHH_PR5E_LANGUAGE_RATFOLK" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <select type="Language" name="Customized Language" supports="Custom Race Language||Ratfolk Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <grant type="Racial Trait" id="ID_UHH_PR5E_RACIAL_TRAIT_RODENT_FRIENDSHIP" />
+            <grant type="Racial Trait" id="ID_UHH_PR5E_RACIAL_TRAIT_SHREWD_CRAFTER" />
+            <grant type="Racial Trait" id="ID_UHH_PR5E_RACIAL_TRAIT_SEWER_DWELLER" />
+            <grant type="Racial Trait" id="ID_UHH_PR5E_RACIAL_TRAIT_SCURRY" />
+        </rules>
+    </element>
+
+    <element name="Rodent Friendship" type="Racial Trait" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACIAL_TRAIT_RODENT_FRIENDSHIP">
+		<description>
+			<p> You have the ability to communicate with rodents. Your words are understood by rodents and you can understand basic feelings and ideas from them. You have advantage on all Charisma and Animal Handling checks you make to influence them. </p>
+		</description>
+		<sheet>
+			<description>You have the ability to communicate with rodents. Your words are understood by rodents and you can understand basic feelings and ideas from them. You have advantage on all Charisma and Animal Handling checks you make to influence them. </description>
+		</sheet>
+	</element>
+
+    <element name="Shrewd Crafter" type="Racial Trait" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACIAL_TRAIT_SHREWD_CRAFTER">
+		<description>
+			<p> You are proficient in Alchemist’s Supplies and Tinker’s Tools. </p>
+		</description>
+		<sheet display="false" />
+		<rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple Weapon or Tool (Shrewd Crafter)" number="2" supports="Simple||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+        </rules>
+	</element>
+
+    <element name="Sewer Dweller" type="Racial Trait" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACIAL_TRAIT_SEWER_DWELLER">
+		<description>
+			<p> You have advantage on saving throws against diseases and being poisoned. </p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against diseases and being poisoned. </description>
+		</sheet>
+	</element>
+
+    <element name="Scurry" type="Racial Trait" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACIAL_TRAIT_SCURRY">
+		<description>
+			<p> You can move through the space of any creature that is of a size larger than yours. </p>
+		</description>
+		<sheet>
+			<description>You can move through the space of any creature that is of a size larger than yours. </description>
+		</sheet>
+	</element>
+
+</elements>

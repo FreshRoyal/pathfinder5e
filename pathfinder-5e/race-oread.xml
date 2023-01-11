@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="uft-8" ?>
+<info>
+		<name>Pathfinder Oread</name>
+		<update version="0.0.1">
+			<file name="race-oread.xml" url="https://raw.githubusercontent.com/FreshRoyal/Pathfinder5Eelements/master/pathfinder-5e/race-oread.xml" />
+		</update>
+	</info>
+<elements>
+    <element name="Oread" type="Race" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACE_OREAD" >
+        <description>
+            <p>Oreads are humans whose ancestry includes the touch of an elemental being of earth somewhere along the line. Stoic and contemplative, oreads are a race not easily moved, yet almost unstoppable when spurred to action. They remain a mystery to most of the world thanks to their reclusive nature, but those who seek them out in their secluded mountain hideaways find oreads to be quiet, dependable, and protective of their friends. </p>
+            <h4>OREAD TRAITS</h4>
+            <p>Your Oread character has the following traits. </p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong>Your Wisdom score increases by 2, and your Strength score increases by 1. </p>
+            <p class="indent"><strong><em>Size.</em></strong> Your size is Medium. </p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet. </p>
+            <p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray. </p>
+            <p class="indent"><strong><em>Stone Resistance.</em></strong> You are resistant to acid damage. </p>
+            <p class="indent"><strong><em>Natural Armor.</em></strong> When not wearing armor, your AC is 13 + your dexterity modifier. </p>
+            <p class="indent"><strong><em>Earth Affinity.</em></strong> You know the Mold Earth and Magic Stone cantrips. Wisdom is your spellcasting modifier. </p>
+            <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Primordial. </p>
+        </description>
+        <sheet display="false" />
+
+        <rules>
+            <stat name="wisdom" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Oread)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Oread)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <grant type="Language" id="ID_LANGUAGE_PRIMORDIAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <select type="Language" name="Customized Language" number="2" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <grant type="Racial Trait" id="ID_UHH_PR5E_RACIAL_TRAIT_STONE_RESISTANCE" />
+            <grant type="Racial Trait" id="ID_UHH_PR5E_RACIAL_TRAIT_NATURAL_ARMOR" />
+            <grant type="Racial Trait" id="ID_UHH_PR5E_RACIAL_TRAIT_EARTH_AFFINITY" />
+        </rules>
+    </element>
+
+    <element name="Stone Resistance" type="Racial Trait" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACIAL_TRAIT_STONE_RESISTANCE">
+		<description>
+			<p>You are resistant to acid damage.</p>
+		</description>
+		<sheet display="false">
+			<description>You are resistant to acid damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+		</rules>
+	</element>
+
+    <element name="Natural Armor" type="Racial Trait" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACIAL_TRAIT_NATURAL_ARMOR">
+		<description>
+			<p>When not wearing armor, your AC is 13 + your dexterity modifier.</p>
+		</description>
+		<sheet>
+			<description>When not wearing armor, your AC is {{oread:natural armor}}. </description>
+		</sheet>
+		<rules>
+			<stat name="oread:natural armor" value="13" />
+			<stat name="oread:natural armor" value="dexterity:modifier" />
+			<stat name="ac:calculation" value="oread:natural armor" bonus="calculation" alt="Natural Armor (Oread)" />
+		</rules>
+	</element>
+
+    <element name="Earth Affinity" type="Racial Trait" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACIAL_TRAIT_EARTH_AFFINITY">
+        <description>
+            <p> You know the Mold Earth and Magic Stone cantrips. Wisdom is your spellcasting modifier. </p>
+        </description>
+        <sheet>
+            <description>You know the Mold Earth and Magic Stone cantrips. (Spellcasting: Wisdom) </description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_XGTE_SPELL_MOLD_EARTH" />
+            <grant type="Spell" id="ID_XGTE_SPELL_MAGIC_STONE" />
+        </rules>
+    </element>
+</elements>

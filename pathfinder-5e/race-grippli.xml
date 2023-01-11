@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="uft-8" ?>
+<info>
+		<name>Pathfinder Grippli</name>
+		<update version="0.0.1">
+			<file name="race-grippli.xml" url="https://raw.githubusercontent.com/FreshRoyal/Pathfinder5Eelements/master/pathfinder-5e/race-grippli.xml" />
+		</update>
+	</info>
+<elements>
+    <element name="Grippli" type="Race" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACE_GRIPPLI">
+        <description>
+        <p>Gripplis are small frog-like humanoids that stand just over 2 feet tall and have mottled green-and-brown skin. Most gripplis are primitive hunter gatherers, living on large insects and fish found near their treetop homes, and are unconcerned about events outside their swamps. Gripplis are very good at traversing these swampy areas, having the ability to climb up trees, leap far distances, and breathe underwater. </p>
+        <h4>GRIPPLI TRAITS </h4>
+        <p>Your Grippli character has the following traits.</p>
+        <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2, and your Wisdom score increases by 1. </p>
+        <p class="indent"><strong><em>Size.</em></strong> Your size is Small. </p>
+        <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 25 feet, and you have a climbing speed of 20 feet. </p>
+        <p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray. </p>
+        <p class="indent"><strong><em>Amphibious.</em></strong> You can breathe air and water.</p>
+        <p class="indent"><strong><em>Natural Concealment.</em></strong> You can attempt to hide even when you are only lightly obscured by foliage, water, heavy rain, falling snow, mist, and other natural phenomena. </p>
+        <p class="indent"><strong><em>Standing Leap.</em></strong> You have a long jump up to 20 feet and a high jump up to 10 feet, with or without a running start. </p>
+        <p class="indent"><strong><em>Swamp Stride.</em></strong> You ignore difficult terrain in swamps. </p>
+        <p class="indent"><strong><em>Weapon Familiarity.</em></strong> You are proficient with spears, blowguns, and nets. </p>
+        <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Grippli.</p>
+        </description>
+        <sheet display="false" />
+
+        <rules>
+            <stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Grippli)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Grippli)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="innate speed" value="25" bonus="base" />
+            <stat name="innate speed:climb" value="20" bonus="base" />
+            <grant type="Size" id="ID_SIZE_SMALL" />
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <grant type="Language" id="ID_UHH_PR5E_LANGUAGE_GRIPPLI" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <select type="Language" name="Customized Language" supports="Custom Race Language||Grippli Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <grant type="Racial Trait" id="ID_UHH_PR5E_RACIAL_TRAIT_AMPHIBIOUS" />
+            <grant type="Racial Trait" id="ID_UHH_PR5E_RACIAL_TRAIT_NATURAL_CONCEALMENT" />
+            <grant type="Racial Trait" id="ID_UHH_PR5E_RACIAL_TRAIT_STANDING_LEAP" />
+            <grant type="Racial Trait" id="ID_UHH_PR5E_RACIAL_TRAIT_SWAMP_STRIDE" />
+            <grant type="Racial Trait" id="ID_UHH_PR5E_RACIAL_TRAIT_WEAPON_FAMILIARITY" />
+        </rules>
+    </element>
+    <element name="Amphbious" type="Racial Trait" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACIAL_TRAIT_AMPHIBIOUS">
+        <description>
+            <p>You can breathe air and water. </p>
+        </description>
+        <sheet>
+            <description>You can breathe air and water. </description>
+        </sheet>
+    </element>
+    <element name="Natural Concealment" type="Racial Trait" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACIAL_TRAIT_NATURAL_CONCEALMENT">
+        <description>
+            <p>You can attempt to hide even when you are only lightly obscured by foliage, water, heavy rain, falling snow, mist, and other natural phenomena. </p>
+        </description>
+        <sheet>
+            <description>You can attempt to hide even when you are only lightly obscured by foliage, water, heavy rain, falling snow, mist, and other natural phenomena. </description>
+        </sheet>
+    </element>
+    <element name="Standing Leap" type="Racial Trait" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACIAL_TRAIT_STANDING_LEAP">
+        <description>
+            <p>You have a long jump up to 20 feet and a high jump up to 10 feet, with or without a running start. </p>
+        </description>
+        <sheet>
+            <description>You have a long jump up to 20 feet and a high jump up to 10 feet, with or without a running start. </description>
+        </sheet>
+    </element>
+    <element name="Swamp Stride" type="Racial Trait" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACIAL_TRAIT_SWAMP_STRIDE">
+        <description>
+            <p>You ignore difficult terrain in swamps. </p>
+        </description>
+        <sheet>
+            <description>You ignore difficult terrain in swamps. </description>
+        </sheet>
+    </element>
+    <element name="Weapon Familiarity" type="Racial Trait" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACIAL_TRAIT_WEAPON_FAMILIARITY">
+        <description>
+            <p>You are proficient with spears, blowguns, and nets. </p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BLOWGUN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_NET" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple/Martial Weapon or Tool (Weapon Familiarity)" number="3" supports="Weapon||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+        </rules>
+        
+    </element>
+</elements>

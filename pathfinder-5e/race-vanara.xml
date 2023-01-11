@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="uft-8" ?>
+<elements>
+<info>
+		<name>Pathfinder Vanara</name>
+		<update version="0.0.1">
+			<file name="race-vanara.xml" url="https://raw.githubusercontent.com/FreshRoyal/Pathfinder5Eelements/master/pathfinder-5e/race-vanara.xml" />
+		</update>
+	</info>
+    <element name="Vanara" type="Race" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACE_VANARA" >
+        <description>
+        <p>Vanaras are intelligent, monkey-like humanoids that live in deep, warm forests and lush jungles. A Vanara’s body is covered in a thin coat of soft fur, and individuals with chestnut, ivory, and even golden coats are common. Their years of living in trees have made them adept at climbing and traversing. While many Vanara’s can be quite mischievous, you will often find that they are wise and have inquisitive minds. </p>
+        <h4>VANARA TRAITS </h4>
+        <p> Your Vanara character has the following traits. </p>
+        <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2, and your Wisdom score increases by 1. </p>
+        <p class="indent"><strong><em>Size.</em></strong> Your size is Medium. </p>
+        <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet, and you have a climbing speed of 30 feet. </p>
+        <p class="indent"><strong><em>Tree Inhabitant.</em></strong> You are proficient in Acrobatics and Survival. </p>
+        <p class="indent"><strong><em>Climbing Expert.</em></strong> Whenever you make a Dexterity (Acrobatics) or Strength (Athletics) check related to traversing (climbing, swinging, jumping, etc) you are considered proficient in the Athletics and Acrobatics skill and add double your Proficiency Bonus to the check, instead of your normal Proficiency Bonus. </p>
+        <p class="indent"><strong><em>Staff Master.</em></strong> You are proficient with quarterstaffs. You may choose to use Dexterity for your attack modifier and damage. Additionally, while wielding a quarterstaff, if you are knocked prone, you can use your reaction to instead not be knocked prone, once you use this feature, you cannot use it again until you finish a short or long rest. </p>
+        <p class="indent"><strong><em>Prehensile Tail.</em></strong> You have a long, flexible tail that you can use to carry objects. You cannot wield weapons with your tail, but the tail allows you to retrieve a small, stowed object carried on your person as a bonus action. </p>
+        <p class="indent"><strong><em>Languages</em></strong> Languages. You can speak, read, and write Common and Vanaran. </p>
+        </description>
+        <sheet display="false" />
+
+        <rules>
+            <stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Vanara)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Vanara)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="innate speed" value="30" bonus="base" />
+			<stat name="innate speed:climb" value="30" bonus="base" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <grant type="Language" id="ID_UHH_PR5E_LANGUAGE_VANARAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <select type="Language" name="Customized Language" supports="Custom Race Language||Vanaran Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <grant type="Racial Trait" id="ID_UHH_PR5E_RACIAL_TRAIT_TREE_INHABITANT" />
+            <grant type="Racial Trait" id="ID_UHH_PR5E_RACIAL_TRAIT_CLIMBING_EXPERT" />
+            <grant type="Racial Trait" id="ID_UHH_PR5E_RACIAL_TRAIT_STAFF_MASTER" />
+            <grant type="Racial Trait" id="ID_UHH_PR5E_RACIAL_TRAIT_PREHENSILE_TAIL" />
+        </rules>
+    </element>
+
+    <element name="Tree Inhabitant" type="Racial Trait" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACIAL_TRAIT_TREE_INHABITANT">
+        <description>
+            <p>You are proficient in Acrobatics and Survival. </p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency" supports="Skill" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+        </rules>
+    </element>
+    
+    <element name="Climbing Expert" type="Racial Trait" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACIAL_TRAIT_CLIMBING_EXPERT">
+        <description>
+            <p>Whenever you make a Dexterity (Acrobatics) or Strength (Athletics) check related to traversing (climbing, swinging, jumping, etc) you are considered proficient in the Athletics and Acrobatics skill and add double your Proficiency Bonus to the check, instead of your normal Proficiency Bonus. </p>
+        </description>
+        <sheet>
+            <description>Whenever you make a Dexterity (Acrobatics) or Strength (Athletics) check related to traversing (climbing, swinging, jumping, etc) you are considered proficient in the Athletics and Acrobatics skill and add double your Proficiency Bonus to the check, instead of your normal Proficiency Bonus. </description>
+        </sheet>
+    </element>
+
+    <element name="Staff Master" type="Racial Trait" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACIAL_TRAIT_STAFF_MASTER">
+		<description>
+			<p>You are proficient with quarterstaffs. You may choose to use Dexterity for your attack modifier and damage. Additionally, while wielding a quarterstaff, if you are knocked prone, you can use your reaction to instead not be knocked prone. Once you use this feature, you cannot use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet>
+			<description usage="1/Short Rest" action="Reaction">While wielding a quarterstaff, you may choose to use Dexterity for your attack modifier and damage. Additionally, while wielding a quarterstaff, if you are knocked prone, you can use your reaction to instead not be knocked prone. Once you use this feature, you cannot use it again until you finish a short or long rest. </description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple/Martial Weapon or Tool (Staff Master)" supports="Weapon||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+    <element name="Prehensile Tail" type="Racial Trait" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACIAL_TRAIT_PREHENSILE_TAIL">
+        <description>
+            <p>You have a long, flexible tail that you can use to carry objects. You cannot wield weapons with your tail, but the tail allows you to retrieve a small, stowed object carried on your person as a bonus action. </p>
+        </description>
+        <sheet>
+            <description action="Bonus Action">You have a long, flexible tail that you can use to carry objects. You cannot wield weapons with your tail, but the tail allows you to retrieve a small, stowed object carried on your person. </description>
+        </sheet>
+    </element>
+
+</elements>

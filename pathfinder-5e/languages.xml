@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="uft-8" ?>
+<elements>
+<info>
+		<name>Pathfinder Languages</name>
+		<update version="0.0.1">
+			<file name="languages.xml" url="https://raw.githubusercontent.com/FreshRoyal/Pathfinder5Eelements/master/pathfinder-5e/languages.xml" />
+		</update>
+	</info>
+    <element name="Grippli" type="Language" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_LANGUAGE_GRIPPLI">
+		<supports>Exotic, Grippli Langauge</supports>
+		<description>
+			<p>Typically spoken by the Grippli.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Grippli</set>
+			<set name="script"></set>
+		</setters>
+	</element>
+
+    <element name="Ratfolk" type="Language" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_LANGUAGE_RATFOLK">
+		<supports>Exotic, Ratfolk Language</supports>
+		<description>
+			<p>Typically spoken by the Ratfolk.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Ratfolk</set>
+			<set name="script"></set>
+		</setters>
+	</element>
+
+    <element name="Samsaran" type="Language" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_LANGUAGE_SAMSARAN">
+		<supports>Exotic, Samsaran Language</supports>
+		<description>
+			<p>Typically spoken by the Samsaran.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Samsaran</set>
+			<set name="script"></set>
+		</setters>
+	</element>
+
+    <element name="Vanaran" type="Language" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_LANGUAGE_VANARAN">
+		<supports>Exotic, Vanaran Language</supports>
+		<description>
+			<p>Typically spoken by the Vanaran.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Vanara</set>
+			<set name="script"></set>
+		</setters>
+	</element>
+
+</elements>

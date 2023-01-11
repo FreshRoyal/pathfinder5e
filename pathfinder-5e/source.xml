@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<info>
+		<name>Pathfinder Races Source</name>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/Pathfinder5Eelements/master/pathfinder-5e/source.xml" />
+		</update>
+	</info>
+<elements>
+	<element name="Pathfinder Races in 5E" type="Source" source="Core" id="ID_SOURCE_PATHFINDER_RACES">
+		<description>
+			<p>Eight races from Pathfinder converted to Dungeons &amp; Dragons Fifth Edition.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">PF5E</set>
+			<set name="url">https://www.reddit.com/r/UnearthedArcana/comments/ar3gco/a_few_pathfinder_races_i_converted_into_5e/</set>
+			<set name="author" abbreviation="UHH" url="https://www.reddit.com/user/HalHauk/">u/HalHauk</set>
+			<set name="release">20190215</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+</elements>

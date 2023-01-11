@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="uft-8" ?>
+<elements>
+<info>
+		<name>Pathfinder Samsaran</name>
+		<update version="0.0.1">
+			<file name="race-samsaran.xml" url="https://raw.githubusercontent.com/FreshRoyal/Pathfinder5Eelements/master/pathfinder-5e/race-samsaran.xml" />
+		</update>
+	</info>
+    <element name="Samsaran" type="Race" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACE_SAMSARAN" >
+        <description>
+            <p>These mysterious pale blue humanoids are no stranger to death. A Samsaran’s life is a circle of birth to death to rebirth. Whenever a Samsaran dies, it reincarnates anew as a young Samsaran to live a new life. Their past memories remain vague and indistinct—and each new incarnation is as different a creature and personality as a child is to a parent. But while they are familiar with death, they do not succumb to it so easily. Samsarans, through their endlessly long lives, have found ways to avoid death. </p>
+            <h4>SAMSARAN TRAITS</h4>
+            <p>Your Samsaran character has the following traits. </p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 2, and your Intelligence score increases by 1. </p>
+            <p class="indent"><strong><em>Size.</em></strong> Your size is Medium. </p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet. </p>
+            <p class="indent"><strong><em>Lifebound.</em></strong> You have advantage on death saves. You are also resistant to necrotic damage. </p>
+            <p class="indent"><strong><em>Shards of the Past.</em></strong> You are proficient in two skills of your choice. You may also choose a tool proficiency instead. </p>
+            <p class="indent"><strong><em>Samsaran Magic.</em></strong> You know Spare the Dying cantrip. You can also cast Comprehend Languages, once you cast it, you cannot cast it again using this feature until you take a long rest. Wisdom is your spellcasting modifier. </p>
+            <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Samsaran. </p>
+        </description>
+        <sheet display="false" />
+
+        <rules>
+            <stat name="wisdom" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Samsaran)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Samsaran)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <grant type="Language" id="ID_UHH_PR5E_LANGUAGE_SAMSARAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <select type="Language" name="Customized Language" number="2" supports="Custom Race Language||Samsaran Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <grant type="Racial Trait" id="ID_UHH_PR5E_RACIAL_TRAIT_LIFEBOUND" />
+            <grant type="Racial Trait" id="ID_UHH_PR5E_RACIAL_TRAIT_SHARDS_OF_THE_PAST" />
+            <grant type="Racial Trait" id="ID_UHH_PR5E_RACIAL_TRAIT_SAMSARAN_MAGIC" />
+        </rules>
+    </element>
+
+    <element name="Lifebound" type="Racial Trait" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACIAL_TRAIT_LIFEBOUND">
+		<description>
+			<p>You have advantage on death saves. You are also resistant to necrotic damage.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on death saves.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+		</rules>
+	</element>
+
+    <element name="Shards of the Past" type="Racial Trait" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACIAL_TRAIT_SHARDS_OF_THE_PAST">
+		<description>
+			<p>You are proficient in two skills of your choice. You may also choose a tool proficiency instead.</p>
+		</description>
+		<sheet display="false">
+			<description>You are proficient in two skills of your choice. You may also choose a tool proficiency instead. </description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Skill or Tool (Shards of the Past)" number="2" supports="Skill||Tool" />
+		</rules>
+	</element>
+
+    <element name="Samsaran Magic" type="Racial Trait" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACIAL_TRAIT_SAMSARAN_MAGIC">
+        <description>
+            <p> You know Spare the Dying cantrip. You can also cast Comprehend Languages, once you cast it, you cannot cast it again using this feature until you take a long rest. Wisdom is your spellcasting modifier. </p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You know the Spare the Dying cantrip. You can also cast Comprehend Languages once with this trait. (Spellcasting: Charisma) </description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SPARE_THE_DYING" />
+            <grant type="Spell" id="ID_PHB_SPELL_COMPREHEND_LANGUAGES" />
+        </rules>
+    </element>
+</elements>
