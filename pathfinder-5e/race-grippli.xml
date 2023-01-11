@@ -2,7 +2,7 @@
 <info>
 		<name>Pathfinder Grippli</name>
 		<update version="0.0.1">
-			<file name="race-grippli.xml" url="https://raw.githubusercontent.com/FreshRoyal/Pathfinder5Eelements/master/pathfinder-5e/race-grippli.xml" />
+			<file name="race-grippli.xml" url="https://raw.githubusercontent.com/FreshRoyal/pathfinder5e/master/pathfinder-5e/race-grippli.xml" />
 		</update>
 	</info>
 <elements>
