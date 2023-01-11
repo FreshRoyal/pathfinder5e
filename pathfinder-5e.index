@@ -3,19 +3,19 @@
 	<info>
 		<name>Pathfinder Races</name>
 		<update version="1.0.0">
-			<file name="pathfinder-5e.index" url="https://raw.githubusercontent.com/FreshRoyal/Pathfinder5Eelements/master/pathfinder-5e.index" />
+			<file name="pathfinder-5e.index" url="https://raw.githubusercontent.com/FreshRoyal/pathfinder5e/master/pathfinder-5e.index" />
 		</update>
 	</info>
 	<files>
-		<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/Pathfinder5Eelements/master/pathfinder-5e/source.xml" />
-		<file name="languages.xml" url="https://raw.githubusercontent.com/FreshRoyal/Pathfinder5Eelements/master/pathfinder-5e/languages.xml" />
-		<file name="race-dhampir.xml" url="https://raw.githubusercontent.com/FreshRoyal/Pathfinder5Eelements/master/pathfinder-5e/race-dhampir.xml" />
-		<file name="race-grippli.xml" url="https://raw.githubusercontent.com/FreshRoyal/Pathfinder5Eelements/master/pathfinder-5e/race-grippli.xml" />
-		<file name="race-kitsune.xml" url="https://raw.githubusercontent.com/FreshRoyal/Pathfinder5Eelements/master/pathfinder-5e/race-kitsune.xml" />
-		<file name="race-oread.xml" url="https://raw.githubusercontent.com/FreshRoyal/Pathfinder5Eelements/master/pathfinder-5e/race-oread.xml" />
-		<file name="race-ratfolk.xml" url="https://raw.githubusercontent.com/FreshRoyal/Pathfinder5Eelements/master/pathfinder-5e/race-ratfolk.xml" />
-		<file name="race-samsaran.xml" url="https://raw.githubusercontent.com/FreshRoyal/Pathfinder5Eelements/master/pathfinder-5e/race-samsaran.xml" />
-		<file name="race-suli.xml" url="https://raw.githubusercontent.com/FreshRoyal/Pathfinder5Eelements/master/pathfinder-5e/race-suli.xml" />
-		<file name="race-vanara.xml" url="https://raw.githubusercontent.com/FreshRoyal/Pathfinder5Eelements/master/pathfinder-5e/race-vanara.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/pathfinder5e/master/pathfinder-5e/source.xml" />
+		<file name="languages.xml" url="https://raw.githubusercontent.com/FreshRoyal/pathfinder5e/master/pathfinder-5e/languages.xml" />
+		<file name="race-dhampir.xml" url="https://raw.githubusercontent.com/FreshRoyal/pathfinder5e/master/pathfinder-5e/race-dhampir.xml" />
+		<file name="race-grippli.xml" url="https://raw.githubusercontent.com/FreshRoyal/pathfinder5e/master/pathfinder-5e/race-grippli.xml" />
+		<file name="race-kitsune.xml" url="https://raw.githubusercontent.com/FreshRoyal/pathfinder5e/master/pathfinder-5e/race-kitsune.xml" />
+		<file name="race-oread.xml" url="https://raw.githubusercontent.com/FreshRoyal/pathfinder5es/master/pathfinder-5e/race-oread.xml" />
+		<file name="race-ratfolk.xml" url="https://raw.githubusercontent.com/FreshRoyal/pathfinder5e/master/pathfinder-5e/race-ratfolk.xml" />
+		<file name="race-samsaran.xml" url="https://raw.githubusercontent.com/FreshRoyal/pathfinder5e/master/pathfinder-5e/race-samsaran.xml" />
+		<file name="race-suli.xml" url="https://raw.githubusercontent.com/FreshRoyal/pathfinder5e/master/pathfinder-5e/race-suli.xml" />
+		<file name="race-vanara.xml" url="https://raw.githubusercontent.com/FreshRoyal/pathfinder5e/master/pathfinder-5e/race-vanara.xml" />
 	</files>
 </index>
