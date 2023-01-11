@@ -3,7 +3,7 @@
 <info>
 		<name>Pathfinder Samsaran</name>
 		<update version="0.0.1">
-			<file name="race-samsaran.xml" url="https://raw.githubusercontent.com/FreshRoyal/Pathfinder5Eelements/master/pathfinder-5e/race-samsaran.xml" />
+			<file name="race-samsaran.xml" url="https://raw.githubusercontent.com/FreshRoyal/pathfinder5e/master/pathfinder-5e/race-samsaran.xml" />
 		</update>
 	</info>
     <element name="Samsaran" type="Race" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACE_SAMSARAN" >
