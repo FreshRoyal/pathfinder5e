@@ -2,7 +2,7 @@
 <info>
 		<name>Pathfinder Oread</name>
 		<update version="0.0.1">
-			<file name="race-oread.xml" url="https://raw.githubusercontent.com/FreshRoyal/Pathfinder5Eelements/master/pathfinder-5e/race-oread.xml" />
+			<file name="race-oread.xml" url="https://raw.githubusercontent.com/FreshRoyal/pathfinder5e/master/pathfinder-5e/race-oread.xml" />
 		</update>
 	</info>
 <elements>
