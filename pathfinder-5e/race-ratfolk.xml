@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="uft-8" ?>
 <elements>
-<info>
+	<info>
 		<name>Pathfinder Ratfolk</name>
 		<update version="0.0.1">
 			<file name="race-ratfolk.xml" url="https://raw.githubusercontent.com/FreshRoyal/pathfinder5e/master/pathfinder-5e/race-ratfolk.xml" />

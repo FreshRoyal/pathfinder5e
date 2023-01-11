@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="uft-8" ?>
-<info>
+<elements>
+	<info>
 		<name>Pathfinder Oread</name>
 		<update version="0.0.1">
 			<file name="race-oread.xml" url="https://raw.githubusercontent.com/FreshRoyal/pathfinder5e/master/pathfinder-5e/race-oread.xml" />
 		</update>
 	</info>
-<elements>
     <element name="Oread" type="Race" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACE_OREAD" >
         <description>
             <p>Oreads are humans whose ancestry includes the touch of an elemental being of earth somewhere along the line. Stoic and contemplative, oreads are a race not easily moved, yet almost unstoppable when spurred to action. They remain a mystery to most of the world thanks to their reclusive nature, but those who seek them out in their secluded mountain hideaways find oreads to be quiet, dependable, and protective of their friends. </p>

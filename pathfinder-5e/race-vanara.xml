@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="uft-8" ?>
 <elements>
-<info>
+	<info>
 		<name>Pathfinder Vanara</name>
 		<update version="0.0.1">
 			<file name="race-vanara.xml" url="https://raw.githubusercontent.com/FreshRoyal/pathfinder5e/master/pathfinder-5e/race-vanara.xml" />

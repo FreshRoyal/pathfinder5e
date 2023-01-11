@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="uft-8" ?>
-<info>
+<elements>
+    <info>
 		<name>Pathfinder Grippli</name>
 		<update version="0.0.1">
 			<file name="race-grippli.xml" url="https://raw.githubusercontent.com/FreshRoyal/pathfinder5e/master/pathfinder-5e/race-grippli.xml" />
 		</update>
 	</info>
-<elements>
-    <element name="Grippli" type="Race" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACE_GRIPPLI">
+	<element name="Grippli" type="Race" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACE_GRIPPLI">
         <description>
         <p>Gripplis are small frog-like humanoids that stand just over 2 feet tall and have mottled green-and-brown skin. Most gripplis are primitive hunter gatherers, living on large insects and fish found near their treetop homes, and are unconcerned about events outside their swamps. Gripplis are very good at traversing these swampy areas, having the ability to climb up trees, leap far distances, and breathe underwater. </p>
         <h4>GRIPPLI TRAITS </h4>

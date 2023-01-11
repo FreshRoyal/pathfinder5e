@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<info>
+<elements>
+	<info>
 		<name>Pathfinder Races Source</name>
 		<update version="0.0.1">
 			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/pathfinder5e/master/pathfinder-5e/source.xml" />
 		</update>
 	</info>
-<elements>
 	<element name="Pathfinder Races in 5E" type="Source" source="Core" id="ID_SOURCE_PATHFINDER_RACES">
 		<description>
 			<p>Eight races from Pathfinder converted to Dungeons &amp; Dragons Fifth Edition.</p>

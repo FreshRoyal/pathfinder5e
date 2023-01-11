@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="uft-8" ?>
-<info>
+<elements>
+    <info>
 		<name>Pathfinder Kitsune</name>
 		<update version="0.0.1">
 			<file name="race-kitsune.xml" url="https://raw.githubusercontent.com/FreshRoyal/pathfinder5e/master/pathfinder-5e/race-kitsune.xml" />
 		</update>
 	</info>
-<elements>
-    <element name="Kitsune" type="Race" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACE_KITSUNE" >
+	<element name="Kitsune" type="Race" source="Pathfinder Races in 5E" id="ID_UHH_PR5E_RACE_KITSUNE" >
         <description>
         <p>Kitsune, or fox folk, are vulpine shapeshifters known for their love of both trickery and art. Kitsune possess two forms: that of an attractive human of slender build with salient eyes, and their true form of a multi-tailed fox. Despite an irrepressible penchant for deception, kitsune prize loyalty and make true companions. They delight in the arts, particularly riddles and storytelling, and settle in ancestral clans, taking their wisdom from both the living and spirits. </p>
         <h4>KITSUNE TRAITS </h4>
