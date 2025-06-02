@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="uft-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
 		<name>Pathfinder Languages</name>
-		<update version="0.0.1">
+		<update version="0.0.3">
 			<file name="languages.xml" url="https://raw.githubusercontent.com/FreshRoyal/pathfinder5e/master/pathfinder-5e/languages.xml" />
 		</update>
 	</info>
