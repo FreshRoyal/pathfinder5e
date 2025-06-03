@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Pathfinder Races</name>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="pathfinder-5e.index" url="https://raw.githubusercontent.com/FreshRoyal/pathfinder5e/master/pathfinder-5e.index" />
 		</update>
 	</info>
